@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#display {
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#historySection {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+
+  flex-wrap: wrap;
+  overflow: scroll;
+  border-radius: 5px;
+}
